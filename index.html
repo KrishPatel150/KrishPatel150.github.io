@@ -30,35 +30,36 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    .hero-photo {
-      margin-top: 35px;
-      display: flex;
-      justify-content: flex-end;
-    }
+.hero-photo {
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-    .hero-photo img {
-      width: 320px;
-      height: 380px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-    }
+.hero-photo img {
+  width: 350px;
+  height: 430px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 24px;
+  border: 1px solid rgba(232, 62, 145, 0.35);
+  box-shadow: 0 20px 80px rgba(232, 62, 145, 0.12);
+}
 
-    @media (max-width: 768px) {
-      .hero-photo {
-        justify-content: center;
-      }
+@media (max-width: 768px) {
+  .hero-photo {
+    justify-content: center;
+    margin: 35px auto;
+  }
 
-      .hero-photo img {
-        width: 100%;
-        max-width: 300px;
-        height: 350px;
-      }
-    }
-  </style>
-
+  .hero-photo img {
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+  }
+}
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
